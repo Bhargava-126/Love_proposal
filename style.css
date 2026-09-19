@@ -1,0 +1,92 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 45px 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.heart {
+    font-size: 70px;
+    animation: beat 1s infinite;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#yes {
+    background: #e91e63;
+    color: white;
+}
+
+#yes:hover {
+    transform: scale(1.1);
+}
+
+#no {
+    background: #777;
+    color: white;
+}
+
+.result {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #e91e63;
+    font-weight: bold;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+```
+
